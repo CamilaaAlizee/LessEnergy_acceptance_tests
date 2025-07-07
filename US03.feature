@@ -4,11 +4,11 @@ casa (alto, medio o bajo), para poder tomar decisiones sobre su uso y optimizar 
 
 Scenario: ES01 - Visualización de niveles de alerta
 TA01
-Given que el [usuario] se encuentra en la [sección de consumo por dispositivo]
-And el [usuario] visualiza la [lista de dispositivos conectados]
-When el [consumo] supera ciertos [umbrales]
-Then debe mostrarse un [ícono de nivel de alerta] (alto, medio, bajo)
-And cada [casilla de dispositivo] se pinta con un [color] correspondiente
+Given que el <usuario> se encuentra en la <sección de consumo por dispositivo>
+And el <usuario> visualiza la <lista de dispositivos conectados>
+When el <consumo> supera ciertos <umbrales>
+Then debe mostrarse un <icono de nivel de alerta> alto, medio, bajo
+And cada <casilla de dispositivo> se pinta con un <color> correspondiente
 
 Examples:
   | usuario | dispositivo     | consumo actual | umbral alerta | nivel de alerta | color indicador |
@@ -18,10 +18,10 @@ Examples:
 
 Scenario: ES02 - Detalles de dispositivo
 TA02
-Given que el [usuario] está observando las [alertas] en la lista de dispositivos
-When el [usuario] presione sobre un [dispositivo de la lista]
-Then se debe mostrar un [panel con información] adicional
-And el [panel] debe mostrar el [valor exacto de kWh] y un [gráfico]
+Given que el <usuario> está observando las <alertas> en la lista de dispositivos
+When el <usuario> presione sobre un <dispositivo de la lista>
+Then se debe mostrar un <panel con informacion> adicional
+And el <panel> debe mostrar el <valor exacto de kWh> y un <grafico>
 
 Examples:
   | usuario | dispositivo     | consumo actual | contenido del panel                                      |

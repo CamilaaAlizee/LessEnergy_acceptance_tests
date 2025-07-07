@@ -5,9 +5,9 @@ consumo anómalo, para ahorrar energía.
 
 Scenario: ES01 - apagado automático 
 TA01
-Given que el [usuario] a elegido cuales son los [dispositivos] que se [apagaran]
-When la hora [concuerde] con la [hora de apagado] guardada 
-Then el sistema debe [mandar] una [notificación] de [confirmación de apagado].
+Given que el <usuario> a elegido cuales son los <dispositivos> que se <apagaran>
+When la hora <concuerde> con la <hora de apagado> guardada 
+Then el sistema debe mandar una <notificacion> de <confirmacion de apagado>.
 
 Examples:
   | usuario | dispositivos | apagado de dispositivo |
@@ -16,9 +16,9 @@ Examples:
 
 Scenario: ES02 - confirmación automática 
 TA02
-Given que el [usuario] a [recibido] la [notificación] de [confirmación] 
-When [confirme] el [apagado] o pase un periodo de tiempo sin respuesta 
-Then el [sistema] debe [apagar] todos los [dispositivos] [seleccionados] anteriormente 
+Given que el <usuario> a recibido la <notificacion> de <confirmacion> 
+When <confirme> el <apagado> o pase un periodo de tiempo sin respuesta 
+Then el <sistema> debe <apagar> todos los <dispositivos seleccionados> anteriormente 
 
 Examples:
   | usuario |   dispositivo sin uso   | 

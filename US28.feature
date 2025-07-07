@@ -3,10 +3,10 @@ Como usuario, quiero opciones de accesibilidad (tamaño de letra, etc.) para que
 
 Scenario: ES01 - Ajuste de tamaño de texto
 TA01
-Given que el [usuario] tiene alguna [necesidad visual específica]
-And la [aplicación] debe brindar una [buena experiencia]
-When el [usuario] accede a la [configuración] y ajusta el [tamaño de letra]
-Then el [texto de la aplicación] se adaptará al [tamaño seleccionado]
+Given que el <usuario> tiene alguna <necesidad visual especifica>
+And la <aplicacion> debe brindar una <buena experiencia>
+When el <usuario> accede a la <configuracion> y ajusta el <tamano de letra>
+Then el <texto de la aplicacion> se adaptará al <tamano seleccionado>
 
 Examples:
   | usuario   | tamaño de letra elegido | resultado esperado                  |

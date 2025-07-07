@@ -4,9 +4,9 @@ dispositivo esté cifrada y protegida para reconocer accesos no autorizados.
 
 Scenario: ES01 - Cifrado de datos personales 
 TA01
-Given que el [usuario] ha ingresado [datos personales] y de [consumo] 
-When la información se [almacena] en la base de datos 
-Then debe ser [cifrada] mediante un algoritmo seguro.
+Given que el <usuario> ha ingresado <datos personales> y de <consumo> 
+When la información se <almacena> en la base de datos 
+Then debe ser <cifrada> mediante un algoritmo seguro.
 
 Examples:
   |usuario     |datos personales   | datos de consumo |
@@ -15,9 +15,9 @@ Examples:
 
 Scenario: ES02 - Bloqueo ante intento de acceso no autorizado 
 TA02
-Given que un tercero intenta [acceder] sin [credenciales válidas] 
-When el sistema [detecta] el intento 
-Then debe [bloquear el acceso] y [registrar el evento] en el historial de seguridad 
+Given que un tercero intenta <acceder> sin <credenciales validas> 
+When el sistema <detecta> el intento 
+Then debe <bloquear el acceso> y <registrar el evento> en el historial de seguridad 
 
 Examples:
   |usuario | credencial no identificado |              mensaje                 |

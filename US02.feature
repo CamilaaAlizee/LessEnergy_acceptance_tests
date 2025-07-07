@@ -4,10 +4,10 @@ ya sea del más alto al más bajo o viceversa, para modificarlo según mi criter
 
 Scenario: ES01 - Visualización de consumo ordenado mayor a menor  
 TA01
-Given que el [usuario] accede a la sección de [consumo por dispositivo]  
-And el [sistema] ha [registrado el consumo] por cada electrodoméstico  
-When el [usuario] elige [ordenar los dispositivos] por consumo mayor  
-Then se mostrará la [lista ordenada] de mayor a menor consumo  
+Given que el <usuario> accede a la sección de <consumo por dispositivo>  
+And el <sistema> ha <registrado el consumo> por cada electrodoméstico  
+When el <usuario> elige <ordenar los dispositivos> por consumo mayor  
+Then se mostrará la <lista ordenada> de mayor a menor consumo  
 
 Examples:
   | usuario | dispositivos               | consumo registrado  | orden seleccionado     | resultado esperado                        |
@@ -16,10 +16,10 @@ Examples:
 
 Scenario: ES02 - Visualización de consumo ordenado menor a mayor
 TA02
-Given que el [usuario] accede a la [sección de consumo por dispositivo]
-And el [sistema] ha [registrado el consumo] por cada electrodoméstico
-When el [usuario] elige [ordenar los dispositivos] por consumo menor
-Then se mostrará la [lista ordenada] de menor a mayor consumo
+Given que el <usuario> accede a la <seccion de consumo por dispositivo>
+And el <sistema> ha <registrado el consumo> por cada electrodoméstico
+When el <usuario> elige <ordenar los dispositivos> por consumo menor
+Then se mostrará la <lista ordenada> de menor a mayor consumo
 
 Examples:
   | usuario | dispositivos                | consumo registrado | orden seleccionado     | resultado esperado                        |

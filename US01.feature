@@ -4,10 +4,10 @@ máxima de 5 segundos, para identificar posibles picos de consumo apenas aparezc
 
 Scenario: ES01 - Actualización en tiempo real 
 TA01
-Given que el [usuario] ha [iniciado sesión] en la aplicación
-And el [sistema] está conectado al [medidor inteligente]
-When el [consumo eléctrico] varía
-Then la [aplicación] debe actualizar los [datos en pantalla] con una latencia máxima de 5 segundos
+Given que el <usuario> ha <iniciado sesion> en la aplicación
+And el <sistema> está conectado al <medidor inteligente>
+When el <consumo electrico> varía
+Then la <aplicacion> debe actualizar los <datos en pantalla> con una latencia máxima de 5 segundos
 
 Examples:
   | usuario | estado del medidor | consumo eléctrico | mensaje mostrado                      |
@@ -17,10 +17,10 @@ Examples:
 
 Scenario: ES02 - Detección de pico visible en la interfaz 
 TA02
-Given que la [aplicación] está mostrando los [datos en tiempo real]  
-When se detecta un [aumento repentino] que supera el [umbral predefinido]  
-Then se debe resaltar el [pico] en el [gráfico]  
-And mostrar un [mensaje] indicando “Pico de consumo detectado”  
+Given que la <aplicacion> está mostrando los <datos en tiempo real>  
+When se detecta un <aumento repentino> que supera el <umbral predefinido>  
+Then se debe resaltar el <pico> en el <grafico>  
+And mostrar un <mensaje> indicando “Pico de consumo detectado”  
 
 Examples:
   | usuario | consumo detectado  | umbral | mensaje                      |
